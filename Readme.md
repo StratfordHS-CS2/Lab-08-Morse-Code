@@ -44,8 +44,8 @@ Complete the `translate` method. This method takes a string in Morse Code and tr
 |Y| -.-- |
 |Z| --.. |
 |0| ----- |
-|2| ..--- |
 |1| .---- |
+|2| ..--- |
 |3| ...-- |
 |4| ....- |
 |5| ..... |
