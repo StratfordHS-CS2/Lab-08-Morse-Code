@@ -7,6 +7,8 @@ This lab was designed to give you practice using a `switch` statement in Java. I
 
 ## Instructions
 Complete the `translate` method. This method takes a string in Morse Code and translates it to a text string.  The text string is returned.
+* `translate` takes one parameter, a string containing the morse code word.
+* `translate` doesn't print anything. Instead it returns a string containing the text word. This word is printed in `main`.
 * You must translate all the characters below (A-Z,0-9).
 * All translated characters will be uppercase.
 * If you receive a Morse Code letter that is not translatable it should translate to "?".
