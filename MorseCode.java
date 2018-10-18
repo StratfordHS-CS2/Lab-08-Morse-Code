@@ -32,8 +32,11 @@ public class MorseCode
             {
                 done = true;
             }
-            String word = translate(mcWord);
-            System.out.println(word);
+            else
+            {
+                String word = translate(mcWord);
+                System.out.println(word);
+            }
         }
     }
 }
