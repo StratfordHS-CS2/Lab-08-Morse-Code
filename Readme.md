@@ -39,8 +39,8 @@ Complete the `translate` method. This method takes a string in Morse Code and tr
 |T| - |
 |U| ..- |
 |V| ...- |
-|X| -..- |
 |W| .-- |
+|X| -..- |
 |Y| -.-- |
 |Z| --.. |
 |0| ----- |
