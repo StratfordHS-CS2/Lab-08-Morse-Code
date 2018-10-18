@@ -55,6 +55,18 @@ Complete the `translate` method. This method takes a string in Morse Code and tr
 |9| ----. |
 |?| unknown |
 
+## Sample Output
+```
+Enter a word in Morse Code. Leave one space between letters. Enter 'done' to quit.
+... --- ...
+SOS
+Enter a word in Morse Code. Leave one space between letters. Enter 'done' to quit.
+.-- ..-- ----. ........
+W?9?
+Enter a word in Morse Code. Leave one space between letters. Enter 'done' to quit.
+done
+```
+
 ## The Switch Statement
 * [Switch Statement - Geeks for Geeks](https://www.geeksforgeeks.org/switch-statement-in-java/)
 * [Switch Statement - Tutorials Point](https://www.tutorialspoint.com/java/switch_statement_in_java.htm)
