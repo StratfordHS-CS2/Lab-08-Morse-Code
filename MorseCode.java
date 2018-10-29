@@ -10,7 +10,7 @@ public class MorseCode
 {
     public static String translate( String str )
     {
-
+        
     }
 
     /**
