@@ -2,10 +2,10 @@
 dependency1.from=MorseCodeTest
 dependency1.to=MorseCode
 dependency1.type=UsesDependency
-editor.fx.0.height=979
-editor.fx.0.width=1575
-editor.fx.0.x=272
-editor.fx.0.y=6
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 objectbench.height=161
 objectbench.width=570
 package.divider.horizontal=0.5997920997920998

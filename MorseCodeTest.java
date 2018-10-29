@@ -37,19 +37,62 @@ public class MorseCodeTest
     public void tearDown()
     {
     }
-    
+	
     /**
-     * Test the translate function.
+	 * Test all letters individually.
+	 */
+	@Test
+	public void lettersTest()
+	{
+		String[] input = { ".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.",
+                           "--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.." };
+        String[] expected = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W",
+                             "X","Y","Z" };
+        
+        for( int i = 0; i < input.length; i++ )
+        {
+            assertEquals("translate(\"" + input[i] + "\") failed", expected[i], MorseCode.translate(input[i]) );
+        }
+	}
+	
+	/**
+     * Test all numbers individually.
      */
     @Test
-    public void translateTest()
+    public void numbersTest()
     {
-        String[] input = { ".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.",
-                           "--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..","-----",".----","..---","...--",
-                           "....-",".....","-....","--...","---..","----.","... --- ...",".- ...- .. ...","-.-. --- ... -.-. ..",
-                           ".-.-. ..- --.--" };
-        String[] expected = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W",
-                             "X","Y","Z","0","1","2","3","4","5","6","7","8","9","SOS","AVIS","COSCI","?U?" };
+        String[] input = { "-----",".----","..---","...--","....-",".....","-....","--...","---..","----." };
+        String[] expected = {"0","1","2","3","4","5","6","7","8","9" };
+        
+        for( int i = 0; i < input.length; i++ )
+        {
+            assertEquals("translate(\"" + input[i] + "\") failed", expected[i], MorseCode.translate(input[i]) );
+        }
+    }
+	
+	/**
+     * Test unknown combinations of dots and dashes.
+     */
+    @Test
+    public void errorTest()
+    {
+        String[] input = { ".-.-.-", "..-..", "---....", "asfd" };
+        String[] expected = {"?","?","?","?" };
+        
+        for( int i = 0; i < input.length; i++ )
+        {
+            assertEquals("translate(\"" + input[i] + "\") failed", expected[i], MorseCode.translate(input[i]) );
+        }
+    }
+	
+    /**
+     * Test multiple letter words.
+     */
+    @Test
+    public void wordsTest()
+    {
+        String[] input = { "... --- ...",".- ...- .. ...","-.-. --- ... -.-. ..",".-.-. ..- --.--" };
+        String[] expected = {"SOS","AVIS","COSCI","?U?" };
         
         for( int i = 0; i < input.length; i++ )
         {
